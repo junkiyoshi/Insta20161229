@@ -58,7 +58,7 @@ void draw()
   }
   */
   
-  if(frameCount % 10 == 0)
+  if(frameCount % 5 == 0)
   {
     Particle p = new Particle(0, height / 2);
     p.body.setLinearVelocity(new Vec2(30, 0));
@@ -87,13 +87,11 @@ void draw()
   }
   
   println(frameCount);
-  /*
   saveFrame("screen-#####.png");
   if(frameCount > 3600)
   {
      exit();
   }
-  */
 }
 
 void mouseClicked()

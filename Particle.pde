@@ -68,7 +68,7 @@ class Particle
     
     for(int i = 0; i < history.length - 1; i++)
     {
-      stroke(bodyColor, 255 - i * 10);
+      stroke(bodyColor, 128 - i * 5);
       strokeWeight(3);
       line(history[i].x, history[i].y, history[i + 1].x, history[i + 1].y);
     }
