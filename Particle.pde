@@ -41,7 +41,7 @@ class Particle
 
   boolean isDead() {
     Vec2 pos = box2d.getBodyPixelCoord(body);
-    if (pos.x + size < 0 || pos.x > width + 200 || pos.y > height + size) {
+    if (pos.x + 300 < 0 || pos.x > width + 300 || pos.y + 300 < 0 || pos.y > height + 300) {
       box2d.destroyBody(body);
       return true;
     }

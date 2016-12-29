@@ -22,7 +22,7 @@ void setup()
   
   box2d = new Box2DProcessing(this);
   box2d.createWorld();
-  box2d.setGravity(0, -20);
+  box2d.setGravity(0, 0);
 
   windmilles = new ArrayList<Windmill>();
   for(int x = 0; x < 5; x++)
@@ -42,7 +42,7 @@ void setup()
   }
   
   particles = new ArrayList<Particle>();
-  floor = new Floor();
+  //floor = new Floor();
 }
 
 void draw()
@@ -87,11 +87,13 @@ void draw()
   }
   
   println(frameCount);
+  /*
   saveFrame("screen-#####.png");
   if(frameCount > 3600)
   {
      exit();
   }
+  */
 }
 
 void mouseClicked()
